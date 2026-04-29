@@ -1,0 +1,16 @@
+{
+    "name": "sale-excel",
+    "engine": "handlebars",
+    "recipe": "html-to-xlsx",
+    "creationDate": {
+        "$$date": 1776741271702
+    },
+    "modificationDate": {
+        "$$date": 1776741271702
+    },
+    "shortid": "PNIA5Yc",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "_id": "TBBTymzIHx2ctgsF",
+    "$entitySet": "templates"
+}

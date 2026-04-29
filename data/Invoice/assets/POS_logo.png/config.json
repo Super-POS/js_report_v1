@@ -1,0 +1,15 @@
+{
+    "_id": "66f51b02b75fe84121c85123",
+    "name": "POS_logo.png",
+    "creationDate": {
+        "$$date": 1776739369123
+    },
+    "modificationDate": {
+        "$$date": 1776739369123
+    },
+    "shortid": "zvga5qz",
+    "tenantId": "SUVANNET",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "$entitySet": "assets"
+}

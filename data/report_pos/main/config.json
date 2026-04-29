@@ -1,0 +1,28 @@
+{
+    "_id": "slhia2omHzL0v42M",
+    "name": "main",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "data": {
+        "shortid": "lQsp33f2H"
+    },
+    "shortid": "OdOtC53V_e",
+    "chrome": {
+        "printBackground": true,
+        "format": "A4",
+        "marginTop": "1cm",
+        "marginBottom": "2cm",
+        "landscape": false
+    },
+    "creationDate": {
+        "$$date": 1776739369285
+    },
+    "modificationDate": {
+        "$$date": 1776739369285
+    },
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "pdfOperations": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "templates"
+}

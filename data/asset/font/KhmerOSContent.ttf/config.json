@@ -1,0 +1,21 @@
+{
+    "_id": "il4Jykj793pBTyz2",
+    "name": "KhmerOSContent.ttf",
+    "creationDate": {
+        "$$date": 1776739370080
+    },
+    "modificationDate": {
+        "$$date": 1776739370080
+    },
+    "readPermissions": [
+        "G3wX6hUXmzaMF4d4"
+    ],
+    "editPermissions": [
+        "G3wX6hUXmzaMF4d4"
+    ],
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "shortid": "5FSzp2p",
+    "tenantId": "SUVANNET",
+    "$entitySet": "assets"
+}

@@ -1,0 +1,16 @@
+{
+    "_id": "660f6909f520479b20e5278b",
+    "name": "Order-styles.css",
+    "sharedHelpersScope": null,
+    "creationDate": {
+        "$$date": 1776739369106
+    },
+    "modificationDate": {
+        "$$date": 1776739369106
+    },
+    "shortid": "tHYeEmh",
+    "tenantId": "SUVANNET",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "$entitySet": "assets"
+}

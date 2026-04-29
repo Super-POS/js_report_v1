@@ -1,0 +1,24 @@
+{
+    "_id": "8UCnbUIMKUDWybxW",
+    "name": "page_number",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "creationDate": {
+        "$$date": 1776739370044
+    },
+    "modificationDate": {
+        "$$date": 1776739370044
+    },
+    "shortid": "1dtDvFf",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "chrome": {
+        "marginRight": "1.5cm",
+        "marginLeft": "1.5cm"
+    },
+    "entitySet": "templates",
+    "type": "entity",
+    "key": "8UCnbUIMKUDWybxW",
+    "tenantId": "SUVANNET",
+    "$entitySet": "templates"
+}

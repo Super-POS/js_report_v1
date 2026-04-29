@@ -1,0 +1,18 @@
+{
+    "_id": "Gtx2CkM7y9JyHI2x",
+    "name": "font",
+    "creationDate": {
+        "$$date": 1776739370039
+    },
+    "modificationDate": {
+        "$$date": 1776739370087
+    },
+    "shortid": "mMSUwso",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "visibilityPermissions": [
+        "G3wX6hUXmzaMF4d4"
+    ],
+    "tenantId": "SUVANNET",
+    "$entitySet": "folders"
+}

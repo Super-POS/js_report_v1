@@ -1,0 +1,15 @@
+{
+    "_id": "oyPiFHXbGYxZ5PPG",
+    "name": "times_new_roman.ttf",
+    "shortid": "e5bFk6M_e",
+    "creationDate": {
+        "$$date": 1776739370111
+    },
+    "modificationDate": {
+        "$$date": 1776739370111
+    },
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "assets"
+}

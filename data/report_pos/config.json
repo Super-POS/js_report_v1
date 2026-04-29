@@ -1,0 +1,15 @@
+{
+    "_id": "F4fypmtaPYQqyYOd",
+    "name": "report_pos",
+    "creationDate": {
+        "$$date": 1776739369279
+    },
+    "modificationDate": {
+        "$$date": 1776739369279
+    },
+    "shortid": "iQ3k-Zv",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "folders"
+}

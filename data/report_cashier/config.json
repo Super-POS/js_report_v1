@@ -1,0 +1,15 @@
+{
+    "_id": "qk3N2BfY9dAPw9VP",
+    "name": "report_cashier",
+    "creationDate": {
+        "$$date": 1776739369278
+    },
+    "modificationDate": {
+        "$$date": 1776739369278
+    },
+    "shortid": "LFAxiNq",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "folders"
+}

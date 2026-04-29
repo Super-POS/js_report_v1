@@ -1,0 +1,134 @@
+.invoice-box {
+    width: 100%;
+    padding: 30px;
+    float: left;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    font-size: 9px;
+    line-height: 10px;
+    font-family: 'Siemreap-Regular';
+    color: #555;
+}
+.logo{
+   margin-left: 164px;
+   width: 200px;
+   scale: 1000px;
+}
+.name{
+    color: #264497;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 110px;
+}
+
+.class_p{
+    color: #555;
+    font-size:9px;
+    text-align: center;
+    font-weight: 300;
+
+}
+.ruler span{
+    font-size: 9px;
+    color: #264497;
+    font-weight: bold;
+    text-align: center;
+}
+.title h1{
+    font-size: 17px;
+    font-weight: bold;
+    color: #264497;
+    padding-left: 162px;
+}
+
+.title span{
+    font-weight: bold;
+    padding-top: -20px;
+    padding-left: 155px;
+}
+
+.main table{
+    width: 100%;
+    line-height:20px;
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+    font-weight: bolder;
+    padding-right: 20px;
+}
+.main table tr.infor td:nth-child(1){ 
+    text-align: left;
+}
+.main table tr.infor td:nth-child(2){
+    text-align: right;
+    padding-right: 40px;
+}
+.item table{
+    margin-top: 20px;
+    width: 100%;
+    line-height:27px;
+    text-align: right;
+    font-size: 9px;
+    padding-right: 20px;
+}
+.item table thead tr{
+    font-weight: 900;
+}
+/* thead */
+.item table thead tr th:nth-child(5){
+    padding-right: 45px;
+}
+.item table thead tr th:nth-child(3){
+    padding-right: 35px;
+}
+.item table thead tr th:nth-child(2){
+    padding-right: 35px;
+}
+.item table thead tr th:nth-child(1){
+    padding-right: 30px;
+}
+/* tbody */
+.item table tbody tr td:nth-child(5){
+    padding-right: 45px;
+}
+.item table tbody tr td:nth-child(3){
+    padding-right: 40px;
+}
+.item table tbody tr td:nth-child(2){
+    padding-right: 40px;
+}
+.item table tbody tr td:nth-child(1){
+    padding-right: 35px;
+}
+.total_amount b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total_amount table{
+    margin-top: 15px;
+    width: 100%;
+    line-height:30px;
+    text-align: right;
+    font-size: 10px;
+    padding-right: 10px;
+}
+.total_amount table tr td:nth-child(1){
+    padding-left: 100px;
+    font-weight: 800;
+}
+.total_amount table tr td:nth-child(2){
+    padding-right: 50px;
+}
+.rulers{
+    margin-top: 2px;
+}
+.rulers span{
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+}
+.foot{
+    font-size: 7px;
+    margin-left: 80px;
+}

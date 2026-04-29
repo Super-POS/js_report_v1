@@ -1,0 +1,15 @@
+{
+    "_id": "m5iWE9NWQoVxoqfY",
+    "name": "Content-Bold.ttf",
+    "creationDate": {
+        "$$date": 1776739370067
+    },
+    "modificationDate": {
+        "$$date": 1776739370067
+    },
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "shortid": "ccHKtfb",
+    "tenantId": "SUVANNET",
+    "$entitySet": "assets"
+}

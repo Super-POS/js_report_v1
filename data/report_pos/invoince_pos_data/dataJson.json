@@ -1,0 +1,24 @@
+
+{
+    "currentDate": "2024-10-09T04:22:20.073Z",
+    "currentTime": "11:03:26 AM",
+    "startDate" : "2024-10-09T04:22:20.073Z",
+    "endDate" : "2024-10-09T04:22:20.073Z",
+    "name": "ចាន់​ សុវ៉ាន់ណេត",
+    "SumTotalPrice": "1000000",
+    "data": [
+
+        {
+            "id": 100,
+            "receipt_number": "172028",
+            "total_price": 28000,
+            "ordered_at": "2024-10-09T04:22:20.073Z",
+            "cashier": {
+                "id": 1,
+                "avatar": "static/pos/user/avatar.png",
+                "name": "ចាន់​ សុវ៉ាន់ណេត"
+            }
+        }
+       
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "_id": "wcQPVdKE4ylGPhqp",
+    "name": "images",
+    "creationDate": {
+        "$$date": 1776739370037
+    },
+    "modificationDate": {
+        "$$date": 1776739370037
+    },
+    "shortid": "JtkiQTo",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "visibilityPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "folders"
+}

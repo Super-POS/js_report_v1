@@ -1,0 +1,15 @@
+{
+    "_id": "Jg84pXCk9vp8KoKO",
+    "name": "report_product",
+    "creationDate": {
+        "$$date": 1776739369280
+    },
+    "modificationDate": {
+        "$$date": 1776739369280
+    },
+    "shortid": "8m1F9FX",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "folders"
+}

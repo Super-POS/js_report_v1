@@ -1,0 +1,15 @@
+{
+    "_id": "660f6909f520479b20e5278d",
+    "name": "camcyber_logo.png",
+    "creationDate": {
+        "$$date": 1776739369119
+    },
+    "modificationDate": {
+        "$$date": 1776739369119
+    },
+    "shortid": "jS7_rWO",
+    "tenantId": "SUVANNET",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "$entitySet": "assets"
+}

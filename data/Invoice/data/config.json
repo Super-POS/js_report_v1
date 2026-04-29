@@ -1,0 +1,15 @@
+{
+    "_id": "660f6909f520479b20e5278a",
+    "name": "data",
+    "shortid": "HP18Z75lq",
+    "creationDate": {
+        "$$date": 1776739369097
+    },
+    "modificationDate": {
+        "$$date": 1776739369097
+    },
+    "tenantId": "SUVANNET",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "$entitySet": "data"
+}

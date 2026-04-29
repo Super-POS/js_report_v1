@@ -1,0 +1,15 @@
+{
+    "_id": "wgkHMoFgxpUZvTWJ",
+    "name": "POS - Web-04-01.png",
+    "creationDate": {
+        "$$date": 1776739370048
+    },
+    "modificationDate": {
+        "$$date": 1776739370048
+    },
+    "shortid": "ooBq-Bt",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "assets"
+}

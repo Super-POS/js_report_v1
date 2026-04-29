@@ -1,0 +1,15 @@
+{
+    "_id": "AFQWkpxGlDObjs9b",
+    "name": "invoince_pos_data",
+    "shortid": "lQsp33f2H",
+    "creationDate": {
+        "$$date": 1776739369287
+    },
+    "modificationDate": {
+        "$$date": 1776739369287
+    },
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "data"
+}

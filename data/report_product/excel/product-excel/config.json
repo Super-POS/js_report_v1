@@ -1,0 +1,16 @@
+{
+    "name": "product-excel",
+    "engine": "handlebars",
+    "recipe": "html-to-xlsx",
+    "creationDate": {
+        "$$date": 1776741271857
+    },
+    "modificationDate": {
+        "$$date": 1776741271857
+    },
+    "shortid": "IxRHDnc",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "_id": "otKzzVJDNmSDuzDX",
+    "$entitySet": "templates"
+}

@@ -1,0 +1,32 @@
+{
+    "currentDate": "2024-10-09T04:22:20.073Z",
+    "startDate" : "2024-10-09T04:22:20.073Z",
+    "endDate" : "2024-10-09T04:22:20.073Z",
+    "name": "ចាន់​ សុវ៉ាន់ណេត",
+    "SumTotalPrice": "1000000",
+    "SumTotalSale": "1000",
+    "data": [
+        {
+        "id": 1,
+        "name": "ចាន់​ សុវ៉ាន់ណេត",
+        "phone": "0889566929",
+        "totalOrders": "33",
+        "totalSales": 4046000
+    },
+    {
+        "id": 2,
+        "name": "Heng Tongsour",
+        "phone": "0889566930",
+        "totalOrders": "35",
+        "totalSales": 4925500
+    },
+    {
+        "id": 3,
+        "name": "ENG SOKCHHENG",
+        "phone": "012894154",
+        "totalOrders": "32",
+        "totalSales": 3500000
+    }
+       
+    ]
+}

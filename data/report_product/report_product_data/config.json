@@ -1,0 +1,15 @@
+{
+    "_id": "o4411wg20t1O2YfW",
+    "name": "report_product_data",
+    "shortid": "Pvm0k1dsF",
+    "creationDate": {
+        "$$date": 1776739369291
+    },
+    "modificationDate": {
+        "$$date": 1776739369291
+    },
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "data"
+}

@@ -1,0 +1,62 @@
+{
+    "id": 1031,
+    "title_of_service": "Car Service",
+    "receipt_number": 3204675,
+    "cashier_id": 1,
+    "total_price": 36000,
+    "ordered_at": "2023-07-27 01:43:12",
+    "cashier": {
+        "id": 1,
+        "name": "Yim Klok"
+    },
+    "details": [
+        {
+            "id": 3548,
+            "order_id": 1031,
+            "qty": 2,
+            "product_id": 6,
+            "unit_price": 3000,
+            "product": {
+                "id": 6,
+                "name": "Schoko",
+                "image": "static/Products/Snack/milch-schoko.png"
+            }
+        },
+        {
+            "id": 3549,
+            "order_id": 1031,
+            "qty": 2,
+            "product_id": 7,
+            "unit_price": 5000,
+            "product": {
+                "id": 7,
+                "name": "Cheez-it",
+                "image": "static/Products/Snack/cheezit.png"
+            }
+        },
+        {
+            "id": 3550,
+            "order_id": 1031,
+            "qty": 4,
+            "product_id": 8,
+            "unit_price": 2000,
+            "product": {
+                "id": 8,
+                "name": "Chikki",
+                "image": "static/Products/Snack/chikki.png"
+            }
+        },
+        {
+            "id": 3551,
+            "order_id": 1031,
+            "qty": 3,
+            "product_id": 9,
+            "unit_price": 4000,
+            "product": {
+                "id": 9,
+                "name": "Snickers",
+                "image": "static/Products/Snack/snickers.jpg"
+            }
+        }
+    ]
+}

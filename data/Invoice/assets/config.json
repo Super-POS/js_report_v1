@@ -1,0 +1,15 @@
+{
+    "_id": "660f6909f520479b20e52788",
+    "name": "assets",
+    "creationDate": {
+        "$$date": 1776739369071
+    },
+    "modificationDate": {
+        "$$date": 1776739369071
+    },
+    "shortid": "zXgbI8A",
+    "tenantId": "SUVANNET",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "$entitySet": "folders"
+}

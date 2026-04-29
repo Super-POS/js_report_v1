@@ -1,0 +1,16 @@
+{
+    "_id": "PlL8eOaV4vdl0TuU",
+    "name": "footer",
+    "creationDate": {
+        "$$date": 1776739370034
+    },
+    "modificationDate": {
+        "$$date": 1776739370034
+    },
+    "shortid": "rpZ2n_9",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "visibilityPermissions": [],
+    "$entitySet": "folders"
+}

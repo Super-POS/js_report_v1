@@ -1,0 +1,15 @@
+{
+    "_id": "mk5d3HNv7sC64Scx",
+    "name": "report_seller_data",
+    "shortid": "xs1rq2cD-",
+    "creationDate": {
+        "$$date": 1776739369289
+    },
+    "modificationDate": {
+        "$$date": 1776739369289
+    },
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "data"
+}

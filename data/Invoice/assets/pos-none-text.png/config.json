@@ -1,0 +1,15 @@
+{
+    "_id": "660f6909f520479b20e5278e",
+    "name": "pos-none-text.png",
+    "creationDate": {
+        "$$date": 1776739369118
+    },
+    "modificationDate": {
+        "$$date": 1776739369118
+    },
+    "shortid": "kF5fY28",
+    "tenantId": "SUVANNET",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "$entitySet": "assets"
+}

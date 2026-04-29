@@ -1,0 +1,15 @@
+{
+    "_id": "660f5ab7f520479b20e52690",
+    "name": "Invoice",
+    "tenantId": "SUVANNET",
+    "creationDate": {
+        "$$date": 1776739369067
+    },
+    "modificationDate": {
+        "$$date": 1776739369067
+    },
+    "shortid": "oA7mEkl",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "$entitySet": "folders"
+}

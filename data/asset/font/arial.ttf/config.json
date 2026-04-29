@@ -1,0 +1,15 @@
+{
+    "_id": "NH1yca9tw8S72Pio",
+    "name": "arial.ttf",
+    "creationDate": {
+        "$$date": 1776739370115
+    },
+    "modificationDate": {
+        "$$date": 1776739370115
+    },
+    "shortid": "6AOWtl9",
+    "inheritedReadPermissions": [],
+    "inheritedEditPermissions": [],
+    "tenantId": "SUVANNET",
+    "$entitySet": "assets"
+}

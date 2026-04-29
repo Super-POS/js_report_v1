@@ -1,0 +1,117 @@
+<!-- 
+Invoice dynamically rendered into html using handlebars and converted into pdf
+using chrome-pdf recipe. The styles are extracted into separate asset for 
+better readability and later reuse.
+
+Data to this sample are mocked at the design time and should be filled on the 
+incoming API request.
+!-->
+
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">     
+    </head>
+    <style>
+        @font-face {
+        font-family: 'Siemreap-Regular';
+         src: url({{asset "/Invoice/assets/Siemreap-Regular.ttf" "dataURI"}});
+        format('truetype');
+        }
+       {{asset "/Invoice/assets/Order-styles.css"}}
+    </style>  
+    <body>
+        <div class="invoice-box">
+            <div class="logo">
+                 <img src="{{asset "/asset/images/POS - Web-04-01.png" "dataURI"}}" style="width:100%; max-width:50px;" />
+            </div>
+            <div class="name">
+                <h3>POS System</h3>
+            </div>
+            {{!-- <div class="class_p">
+                <p>Street 598 (H.E. Chea Sophara Street Phnom Penh, Sangkat Chrang Chamres 2, <br> Khan Russey Keo, 12000), Cambodia</p>
+            </div> --}}
+            <div class="ruler">
+                <span>- - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>
+            </div>
+            <div class="title">
+                <h1>Invoice</h1>
+            </div>
+            <div class="main">
+                <table>
+                   
+                            <tr class="infor">
+                                <td>
+                                    Invoice No :<br>
+                                    Cashier :<br>
+                                    Sale Date :
+                                </td>
+                                <td>
+                                    #{{receipt_number}}<br>
+                                    {{cashier.name}}<br>
+                                    <span id="saleDate"></span>
+                                </td>
+                            </tr>
+                </table>
+            </div>
+            <div class="item">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Products</th>
+                            <th>Price (៛)</th>
+                            <th>Quantity</th>
+                            <th>Total Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each details}}
+                        <tr>
+                            <td>{{increas}}.</td>
+                            <td>{{product.name}}</td>
+                            <td>{{#price unit_price}}{{/price}} ៛</td>
+                            <td>x {{qty}}</td>
+                            <td>{{#amount unit_price qty}}{{/amount}} ៛</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            
+            </div>
+            <div class="total_amount">
+                <b>_______________________________________________________________________________________________________________________</b>
+                <table>
+                    <tr>
+                        <td>
+                            Total  :
+                        </td>
+                        <td>
+                            {{total_price}} ៛ <br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rulers">
+                <span>- - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  </span>
+            </div>
+            <div class="foot">
+                <h2>Thank you for coming. See you again!</h2>
+            </div>
+        </div>
+        <script>
+            // Inline script to format the date
+            (function() {
+                var orderedAt = "{{ordered_at}}"; // Get the date string from the template
+                var date = new Date(orderedAt); // Create a new Date object
+                var options = { timeZone: 'Asia/Phnom_Penh', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+
+                // Format the date and time
+                var formattedDate = new Intl.DateTimeFormat('en-GB', options).format(date).replace(",", "");
+                document.getElementById('saleDate').textContent = formattedDate;
+            })();
+        </script>
+    </body>
+</html>
+
+
+

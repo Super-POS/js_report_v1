@@ -1,0 +1,209 @@
+{
+    "currentDate": "2024-10-18",
+    "currentTime": "11:52:33 AM",
+    "startDate": "2024-10-11",
+    "endDate": "2024-10-19",
+    "name": "ចាន់​ សុវ៉ាន់ណេត",
+    "SumTotalPrice": 12471500,
+    "SumTotalSale": 2567,
+    "data": [
+        {
+            "id": 6,
+            "name": "Red Bull",
+            "unit_price": 10000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 146,
+            "total_sales": 1460000
+        },
+        {
+            "id": 5,
+            "name": "IZE Cola",
+            "unit_price": 5000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 141,
+            "total_sales": 705000
+        },
+        {
+            "id": 10,
+            "name": "Sprite",
+            "unit_price": 3000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 143,
+            "total_sales": 429000
+        },
+        {
+            "id": 18,
+            "name": "Pork",
+            "unit_price": 8000,
+            "type": {
+                "id": 3,
+                "name": "Food-Meat"
+            },
+            "total_qty": 186,
+            "total_sales": 1488000
+        },
+        {
+            "id": 17,
+            "name": "Hanuman",
+            "unit_price": 4000,
+            "type": {
+                "id": 2,
+                "name": "Alcohol"
+            },
+            "total_qty": 149,
+            "total_sales": 596000
+        },
+        {
+            "id": 16,
+            "name": "Hanuman Black",
+            "unit_price": 8000,
+            "type": {
+                "id": 2,
+                "name": "Alcohol"
+            },
+            "total_qty": 151,
+            "total_sales": 1208000
+        },
+        {
+            "id": 4,
+            "name": "Ize",
+            "unit_price": 4000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 110,
+            "total_sales": 440000
+        },
+        {
+            "id": 11,
+            "name": "PepSi",
+            "unit_price": 2500,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 137,
+            "total_sales": 342500
+        },
+        {
+            "id": 13,
+            "name": "ABC Red",
+            "unit_price": 5000,
+            "type": {
+                "id": 2,
+                "name": "Alcohol"
+            },
+            "total_qty": 110,
+            "total_sales": 550000
+        },
+        {
+            "id": 8,
+            "name": "Red Bull",
+            "unit_price": 12000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 116,
+            "total_sales": 1392000
+        },
+        {
+            "id": 7,
+            "name": "Red Bull Blue",
+            "unit_price": 1500,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 90,
+            "total_sales": 135000
+        },
+        {
+            "id": 1,
+            "name": "Logan Paul",
+            "unit_price": 3000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 178,
+            "total_sales": 534000
+        },
+        {
+            "id": 14,
+            "name": "ABA Black",
+            "unit_price": 5000,
+            "type": {
+                "id": 2,
+                "name": "Alcohol"
+            },
+            "total_qty": 204,
+            "total_sales": 1020000
+        },
+        {
+            "id": 9,
+            "name": "Fanta",
+            "unit_price": 2000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 213,
+            "total_sales": 426000
+        },
+        {
+            "id": 2,
+            "name": "Sting",
+            "unit_price": 5000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 200,
+            "total_sales": 1000000
+        },
+        {
+            "id": 3,
+            "name": "Black Energy",
+            "unit_price": 2000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 70,
+            "total_sales": 140000
+        },
+        {
+            "id": 12,
+            "name": "CocaCola",
+            "unit_price": 2000,
+            "type": {
+                "id": 1,
+                "name": "Beverage"
+            },
+            "total_qty": 143,
+            "total_sales": 286000
+        },
+        {
+            "id": 15,
+            "name": "Hanuman",
+            "unit_price": 4000,
+            "type": {
+                "id": 2,
+                "name": "Alcohol"
+            },
+            "total_qty": 80,
+            "total_sales": 320000
+        }
+    ]
+}
