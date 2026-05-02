@@ -1,134 +1,272 @@
-.invoice-box {
-    width: 100%;
-    padding: 30px;
-    float: left;
-    border: 1px solid #eee;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-    font-size: 9px;
-    line-height: 10px;
-    font-family: 'Siemreap-Regular';
-    color: #555;
-}
-.logo{
-   margin-left: 164px;
-   width: 200px;
-   scale: 1000px;
-}
-.name{
-    color: #264497;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 110px;
+* {
+    box-sizing: border-box;
 }
 
-.class_p{
-    color: #555;
-    font-size:9px;
-    text-align: center;
-    font-weight: 300;
-
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #111827;
+    font-family: 'Siemreap-Regular', 'Courier New', monospace;
 }
-.ruler span{
+
+@page {
+    size: 80mm 105mm;
+    margin: 0;
+}
+
+.receipt {
+    width: 80mm;
+    min-height: 105mm;
+    padding: 3mm 4mm 4mm;
     font-size: 9px;
-    color: #264497;
-    font-weight: bold;
+    line-height: 1.25;
+}
+
+.print-page {
+    break-after: page;
+    page-break-after: always;
+}
+
+.brand {
     text-align: center;
 }
-.title h1{
-    font-size: 17px;
-    font-weight: bold;
-    color: #264497;
-    padding-left: 162px;
+
+.logo-mark {
+    display: inline-flex;
+    width: 13mm;
+    height: 13mm;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #111827;
+    border-radius: 50%;
+    background: #fff;
 }
 
-.title span{
-    font-weight: bold;
-    padding-top: -20px;
-    padding-left: 155px;
+.logo-mark img {
+    width: 12mm;
+    height: 12mm;
+    object-fit: contain;
+    filter: grayscale(1) contrast(1.2);
 }
 
-.main table{
+.shop-name {
+    margin-top: 1mm;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.shop-tagline {
+    margin-top: 0.5mm;
+    font-size: 8px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.shop-meta {
+    margin-top: 0.2mm;
+    color: #4b5563;
+    font-size: 8px;
+}
+
+.divider {
+    height: 0;
+    margin: 1.8mm 0;
+}
+
+.divider.solid {
+    border-top: 1px solid #111827;
+}
+
+.divider.dashed {
+    border-top: 1px dashed #6b7280;
+}
+
+.receipt-title {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.copy-label {
+    margin-bottom: 0.5mm;
+    text-align: center;
+    color: #4b5563;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.meta-table,
+.items-table,
+.summary-table,
+.prep-table {
     width: 100%;
-    line-height:20px;
+    border-collapse: collapse;
+}
+
+.meta-table {
+    margin-top: 1mm;
+    font-size: 9px;
+}
+
+.meta-table td {
+    padding: 0.5mm 0;
+}
+
+.meta-table td:first-child {
+    color: #4b5563;
+}
+
+.meta-table td:last-child {
     text-align: right;
-    font-size: 12px;
-    color: #555;
-    font-weight: bolder;
-    padding-right: 20px;
+    font-weight: 700;
 }
-.main table tr.infor td:nth-child(1){ 
+
+.items-table {
+    font-size: 8px;
+}
+
+.items-table th {
+    padding: 0.8mm 0.5mm;
+    border-bottom: 1px solid #111827;
+    font-size: 7.5px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.items-table td {
+    padding: 0.9mm 0.5mm;
+    vertical-align: top;
+    border-bottom: 1px dotted #d1d5db;
+}
+
+.col-no {
+    width: 6mm;
     text-align: left;
 }
-.main table tr.infor td:nth-child(2){
-    text-align: right;
-    padding-right: 40px;
+
+.col-item {
+    width: 25mm;
+    text-align: left;
+    word-break: break-word;
 }
-.item table{
-    margin-top: 20px;
-    width: 100%;
-    line-height:27px;
+
+.col-price,
+.col-qty,
+.col-total {
     text-align: right;
+    white-space: nowrap;
+}
+
+.summary-table {
     font-size: 9px;
-    padding-right: 20px;
 }
-.item table thead tr{
+
+.summary-table td {
+    padding: 0.5mm 0;
+}
+
+.summary-table td:last-child {
+    text-align: right;
+    font-weight: 700;
+}
+
+.summary-table .grand-total td {
+    padding-top: 1mm;
+    border-top: 1px solid #111827;
+    font-size: 12px;
     font-weight: 900;
+    text-transform: uppercase;
 }
-/* thead */
-.item table thead tr th:nth-child(5){
-    padding-right: 45px;
-}
-.item table thead tr th:nth-child(3){
-    padding-right: 35px;
-}
-.item table thead tr th:nth-child(2){
-    padding-right: 35px;
-}
-.item table thead tr th:nth-child(1){
-    padding-right: 30px;
-}
-/* tbody */
-.item table tbody tr td:nth-child(5){
-    padding-right: 45px;
-}
-.item table tbody tr td:nth-child(3){
-    padding-right: 40px;
-}
-.item table tbody tr td:nth-child(2){
-    padding-right: 40px;
-}
-.item table tbody tr td:nth-child(1){
-    padding-right: 35px;
-}
-.total_amount b{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.total_amount table{
-    margin-top: 15px;
-    width: 100%;
-    line-height:30px;
-    text-align: right;
-    font-size: 10px;
-    padding-right: 10px;
-}
-.total_amount table tr td:nth-child(1){
-    padding-left: 100px;
-    font-weight: 800;
-}
-.total_amount table tr td:nth-child(2){
-    padding-right: 50px;
-}
-.rulers{
-    margin-top: 2px;
-}
-.rulers span{
-    font-size: 9px;
-    font-weight: bold;
+
+.footer {
     text-align: center;
 }
-.foot{
-    font-size: 7px;
-    margin-left: 80px;
+
+.thanks {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.footer-note {
+    margin-top: 0.5mm;
+    color: #4b5563;
+    font-size: 9px;
+}
+
+.prep-ticket {
+    min-height: 105mm;
+    break-before: page;
+    page-break-before: always;
+}
+
+.prep-header {
+    padding: 2mm 0;
+    text-align: center;
+    border: 2px solid #111827;
+}
+
+.prep-title {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.prep-subtitle {
+    margin-top: 1mm;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.prep-table th {
+    padding: 1.5mm 0.5mm;
+    border-bottom: 2px solid #111827;
+    font-size: 11px;
+    font-weight: 900;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.prep-table td {
+    padding: 2mm 0.5mm;
+    border-bottom: 1px dotted #9ca3af;
+    vertical-align: top;
+}
+
+.prep-qty {
+    width: 16mm;
+    font-size: 18px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.prep-item {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.25;
+    word-break: break-word;
+}
+
+.prep-footer {
+    text-align: center;
+    color: #4b5563;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }

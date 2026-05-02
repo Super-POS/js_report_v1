@@ -12,3 +12,6 @@ function increas() {
     n++;
     return n;
 }
+function rowNumber(index) {
+    return Number(index) + 1;
+}

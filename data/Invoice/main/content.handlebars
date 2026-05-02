@@ -9,105 +9,240 @@ incoming API request.
 
 <html>
     <head>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">     
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     </head>
     <style>
         @font-face {
-        font-family: 'Siemreap-Regular';
-         src: url({{asset "/Invoice/assets/Siemreap-Regular.ttf" "dataURI"}});
-        format('truetype');
+            font-family: 'Siemreap-Regular';
+            src: url({{asset "/Invoice/assets/Siemreap-Regular.ttf" "dataURI"}});
+            format('truetype');
         }
-       {{asset "/Invoice/assets/Order-styles.css"}}
-    </style>  
+        {{asset "/Invoice/assets/Order-styles.css"}}
+    </style>
     <body>
-        <div class="invoice-box">
-            <div class="logo">
-                 <img src="{{asset "/asset/images/POS - Web-04-01.png" "dataURI"}}" style="width:100%; max-width:50px;" />
+        <div class="receipt print-page">
+            <div class="brand">
+                <div class="logo-mark">
+                    <img src="{{asset "/Invoice/assets/POS_logo.png" "dataURI"}}" alt="Club 54" />
+                </div>
+                <div class="shop-name">Club 54</div>
+                <div class="shop-tagline">Restaurant &amp; Bar</div>
+                <div class="shop-meta">Phnom Penh, Cambodia</div>
+                <div class="shop-meta">Tel: +855 12 345 678</div>
             </div>
-            <div class="name">
-                <h3>POS System</h3>
-            </div>
-            {{!-- <div class="class_p">
-                <p>Street 598 (H.E. Chea Sophara Street Phnom Penh, Sangkat Chrang Chamres 2, <br> Khan Russey Keo, 12000), Cambodia</p>
-            </div> --}}
-            <div class="ruler">
-                <span>- - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span>
-            </div>
-            <div class="title">
-                <h1>Invoice</h1>
-            </div>
-            <div class="main">
-                <table>
-                   
-                            <tr class="infor">
-                                <td>
-                                    Invoice No :<br>
-                                    Cashier :<br>
-                                    Sale Date :
-                                </td>
-                                <td>
-                                    #{{receipt_number}}<br>
-                                    {{cashier.name}}<br>
-                                    <span id="saleDate"></span>
-                                </td>
-                            </tr>
-                </table>
-            </div>
-            <div class="item">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>№</th>
-                            <th>Products</th>
-                            <th>Price (៛)</th>
-                            <th>Quantity</th>
-                            <th>Total Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{#each details}}
-                        <tr>
-                            <td>{{increas}}.</td>
-                            <td>{{product.name}}</td>
-                            <td>{{#price unit_price}}{{/price}} ៛</td>
-                            <td>x {{qty}}</td>
-                            <td>{{#amount unit_price qty}}{{/amount}} ៛</td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            
-            </div>
-            <div class="total_amount">
-                <b>_______________________________________________________________________________________________________________________</b>
-                <table>
+
+            <div class="divider solid"></div>
+            <div class="copy-label">Customer Copy</div>
+            <div class="receipt-title">Tax Invoice</div>
+
+            <table class="meta-table">
+                <tr>
+                    <td>Receipt No</td>
+                    <td>#{{receipt_number}}</td>
+                </tr>
+                <tr>
+                    <td>Cashier</td>
+                    <td>{{#if cashier}}{{cashier.name}}{{else}}-{{/if}}</td>
+                </tr>
+                <tr>
+                    <td>Sale Date</td>
+                    <td><span class="sale-date"></span></td>
+                </tr>
+            </table>
+
+            <div class="divider dashed"></div>
+
+            <table class="items-table">
+                <thead>
                     <tr>
-                        <td>
-                            Total  :
-                        </td>
-                        <td>
-                            {{total_price}} ៛ <br>
-                        </td>
+                        <th class="col-no">#</th>
+                        <th class="col-item">Item</th>
+                        <th class="col-price">Price</th>
+                        <th class="col-qty">Qty</th>
+                        <th class="col-total">Total</th>
                     </tr>
-                </table>
-            </div>
-            <div class="rulers">
-                <span>- - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  </span>
-            </div>
-            <div class="foot">
-                <h2>Thank you for coming. See you again!</h2>
+                </thead>
+                <tbody>
+                    {{#each details}}
+                    <tr>
+                        <td class="col-no">{{rowNumber @index}}</td>
+                        <td class="col-item">{{#if product}}{{product.name}}{{else}}{{#if menu}}{{menu.name}}{{else}}-{{/if}}{{/if}}</td>
+                        <td class="col-price">{{#price unit_price}}{{/price}}</td>
+                        <td class="col-qty">x{{qty}}</td>
+                        <td class="col-total">{{#amount unit_price qty}}{{/amount}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+            <div class="divider solid"></div>
+
+            <table class="summary-table">
+                <tr>
+                    <td>Subtotal</td>
+                    <td>{{#total_amount total_price}}{{/total_amount}} ៛</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>0 ៛</td>
+                </tr>
+                <tr class="grand-total">
+                    <td>Total</td>
+                    <td>{{#total_amount total_price}}{{/total_amount}} ៛</td>
+                </tr>
+            </table>
+
+            <div class="divider dashed"></div>
+
+            <div class="footer">
+                <div class="thanks">Thank you for visiting!</div>
+                <div class="footer-note">Please come again</div>
             </div>
         </div>
-        <script>
-            // Inline script to format the date
-            (function() {
-                var orderedAt = "{{ordered_at}}"; // Get the date string from the template
-                var date = new Date(orderedAt); // Create a new Date object
-                var options = { timeZone: 'Asia/Phnom_Penh', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
 
-                // Format the date and time
-                var formattedDate = new Intl.DateTimeFormat('en-GB', options).format(date).replace(",", "");
-                document.getElementById('saleDate').textContent = formattedDate;
+        <div class="receipt print-page">
+            <div class="brand">
+                <div class="logo-mark">
+                    <img src="{{asset "/Invoice/assets/POS_logo.png" "dataURI"}}" alt="Club 54" />
+                </div>
+                <div class="shop-name">Club 54</div>
+                <div class="shop-tagline">Restaurant &amp; Bar</div>
+                <div class="shop-meta">Phnom Penh, Cambodia</div>
+                <div class="shop-meta">Tel: +855 12 345 678</div>
+            </div>
+
+            <div class="divider solid"></div>
+            <div class="copy-label">Cashier Copy</div>
+            <div class="receipt-title">Tax Invoice</div>
+
+            <table class="meta-table">
+                <tr>
+                    <td>Receipt No</td>
+                    <td>#{{receipt_number}}</td>
+                </tr>
+                <tr>
+                    <td>Cashier</td>
+                    <td>{{#if cashier}}{{cashier.name}}{{else}}-{{/if}}</td>
+                </tr>
+                <tr>
+                    <td>Sale Date</td>
+                    <td><span class="sale-date"></span></td>
+                </tr>
+            </table>
+
+            <div class="divider dashed"></div>
+
+            <table class="items-table">
+                <thead>
+                    <tr>
+                        <th class="col-no">#</th>
+                        <th class="col-item">Item</th>
+                        <th class="col-price">Price</th>
+                        <th class="col-qty">Qty</th>
+                        <th class="col-total">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each details}}
+                    <tr>
+                        <td class="col-no">{{rowNumber @index}}</td>
+                        <td class="col-item">{{#if product}}{{product.name}}{{else}}{{#if menu}}{{menu.name}}{{else}}-{{/if}}{{/if}}</td>
+                        <td class="col-price">{{#price unit_price}}{{/price}}</td>
+                        <td class="col-qty">x{{qty}}</td>
+                        <td class="col-total">{{#amount unit_price qty}}{{/amount}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+            <div class="divider solid"></div>
+
+            <table class="summary-table">
+                <tr>
+                    <td>Subtotal</td>
+                    <td>{{#total_amount total_price}}{{/total_amount}} ៛</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>0 ៛</td>
+                </tr>
+                <tr class="grand-total">
+                    <td>Total</td>
+                    <td>{{#total_amount total_price}}{{/total_amount}} ៛</td>
+                </tr>
+            </table>
+
+            <div class="divider dashed"></div>
+
+            <div class="footer">
+                <div class="thanks">Internal copy</div>
+                <div class="footer-note">Keep for cashier record</div>
+            </div>
+        </div>
+
+        <div class="receipt prep-ticket">
+            <div class="prep-header">
+                <div class="prep-title">Preparation Ticket</div>
+                <div class="prep-subtitle">Drinks / Kitchen</div>
+            </div>
+
+            <div class="divider solid"></div>
+
+            <table class="meta-table">
+                <tr>
+                    <td>Order No</td>
+                    <td>#{{receipt_number}}</td>
+                </tr>
+                <tr>
+                    <td>Cashier</td>
+                    <td>{{#if cashier}}{{cashier.name}}{{else}}-{{/if}}</td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td><span class="sale-date"></span></td>
+                </tr>
+            </table>
+
+            <div class="divider dashed"></div>
+
+            <table class="prep-table">
+                <thead>
+                    <tr>
+                        <th>Qty</th>
+                        <th>Item to Make</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each details}}
+                    <tr>
+                        <td class="prep-qty">x{{qty}}</td>
+                        <td class="prep-item">{{#if product}}{{product.name}}{{else}}{{#if menu}}{{menu.name}}{{else}}-{{/if}}{{/if}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+            <div class="divider dashed"></div>
+
+            <div class="prep-footer">No payment details on this ticket</div>
+        </div>
+        <script>
+            (function() {
+                var orderedAt = "{{ordered_at}}";
+                var date = new Date(orderedAt);
+                var formattedDate = '-';
+                if (orderedAt && !isNaN(date.getTime())) {
+                    try {
+                        var options = { timeZone: 'Asia/Phnom_Penh', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+                        formattedDate = new Intl.DateTimeFormat('en-GB', options).format(date).replace(",", "");
+                    } catch (e) {
+                        formattedDate = '-';
+                    }
+                }
+                var saleDateNodes = document.querySelectorAll('.sale-date');
+                for (var i = 0; i < saleDateNodes.length; i++) {
+                    saleDateNodes[i].textContent = formattedDate;
+                }
             })();
         </script>
     </body>
