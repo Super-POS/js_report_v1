@@ -29,6 +29,26 @@ body {
     page-break-after: always;
 }
 
+/* Cashier slip can be taller than one sheet; break-after on the same box is unreliable
+   in Chrome when the box fragments across pages. Prep follows via .receipt-slip-break. */
+.print-page--cashier {
+    break-after: auto;
+    page-break-after: auto;
+}
+
+/* Zero-height node with an explicit page break after it always starts prep on a new sheet. */
+.receipt-slip-break {
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    break-after: page;
+    page-break-after: always;
+}
+
 .brand {
     text-align: center;
 }
@@ -207,6 +227,8 @@ body {
 
 .prep-ticket {
     min-height: 105mm;
+    clear: both;
+    display: block;
     break-before: page;
     page-break-before: always;
 }
