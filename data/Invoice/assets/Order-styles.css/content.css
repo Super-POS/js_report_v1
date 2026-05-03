@@ -55,19 +55,16 @@ body {
 
 .logo-mark {
     display: inline-flex;
-    width: 13mm;
-    height: 13mm;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    border: 1px solid #111827;
-    border-radius: 50%;
-    background: #fff;
+    line-height: 0;
 }
 
 .logo-mark img {
-    width: 12mm;
-    height: 12mm;
+    width: auto;
+    max-width: 16mm;
+    height: auto;
+    max-height: 16mm;
     object-fit: contain;
 }
 

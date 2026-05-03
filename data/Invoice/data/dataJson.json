@@ -4,6 +4,8 @@
     "receipt_number": 3204675,
     "cashier_id": 1,
     "total_price": 36000,
+    "total_price_usd": 8.7805,
+    "khr_per_usd": 4100,
     "ordered_at": "2023-07-27 01:43:12",
     "cashier": {
         "id": 1,
@@ -16,6 +18,8 @@
             "qty": 2,
             "product_id": 6,
             "unit_price": 3000,
+            "unit_price_usd": 0.7317,
+            "line_total_usd": 1.4634,
             "product": {
                 "id": 6,
                 "name": "Schoko",
@@ -28,6 +32,8 @@
             "qty": 2,
             "product_id": 7,
             "unit_price": 5000,
+            "unit_price_usd": 1.2195,
+            "line_total_usd": 2.439,
             "product": {
                 "id": 7,
                 "name": "Cheez-it",
@@ -40,6 +46,8 @@
             "qty": 4,
             "product_id": 8,
             "unit_price": 2000,
+            "unit_price_usd": 0.4878,
+            "line_total_usd": 1.9512,
             "product": {
                 "id": 8,
                 "name": "Chikki",
@@ -52,6 +60,8 @@
             "qty": 3,
             "product_id": 9,
             "unit_price": 4000,
+            "unit_price_usd": 0.9756,
+            "line_total_usd": 2.9268,
             "product": {
                 "id": 9,
                 "name": "Snickers",

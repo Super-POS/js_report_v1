@@ -58,9 +58,9 @@
                     <tr>
                         <td class="col-no">{{rowNumber @index}}</td>
                         <td class="col-item">{{#if product}}{{product.name}}{{else}}{{#if menu}}{{menu.name}}{{else}}-{{/if}}{{/if}}</td>
-                        <td class="col-price">{{#price unit_price}}{{/price}}</td>
+                        <td class="col-price">{{#price unit_price_usd}}{{/price}}</td>
                         <td class="col-qty">x{{qty}}</td>
-                        <td class="col-total">{{#amount unit_price qty}}{{/amount}}</td>
+                        <td class="col-total">{{#price line_total_usd}}{{/price}}</td>
                     </tr>
                     {{/each}}
                 </tbody>
@@ -71,19 +71,20 @@
             <table class="summary-table">
                 <tr>
                     <td>Subtotal</td>
-                    <td>{{#total_amount total_price}}{{/total_amount}} ៛</td>
+                    <td>{{#total_amount total_price_usd}}{{/total_amount}}</td>
                 </tr>
                 <tr>
                     <td>Tax</td>
-                    <td>0 ៛</td>
+                    <td>$0.00</td>
                 </tr>
                 <tr class="grand-total">
                     <td>Total</td>
-                    <td>{{#total_amount total_price}}{{/total_amount}} ៛</td>
+                    <td>{{#total_amount total_price_usd}}{{/total_amount}}</td>
                 </tr>
             </table>
 
             <div class="divider dashed"></div>
+            <p style="font-size:9px;text-align:center;color:#555;margin:6px 0 0;">Shown in USD (1 USD = {{khr_per_usd}} KHR)</p>
 
             <div class="footer">
                 <div class="thanks">Thank you for visiting!</div>
@@ -138,9 +139,9 @@
                     <tr>
                         <td class="col-no">{{rowNumber @index}}</td>
                         <td class="col-item">{{#if product}}{{product.name}}{{else}}{{#if menu}}{{menu.name}}{{else}}-{{/if}}{{/if}}</td>
-                        <td class="col-price">{{#price unit_price}}{{/price}}</td>
+                        <td class="col-price">{{#price unit_price_usd}}{{/price}}</td>
                         <td class="col-qty">x{{qty}}</td>
-                        <td class="col-total">{{#amount unit_price qty}}{{/amount}}</td>
+                        <td class="col-total">{{#price line_total_usd}}{{/price}}</td>
                     </tr>
                     {{/each}}
                 </tbody>
@@ -151,19 +152,20 @@
             <table class="summary-table">
                 <tr>
                     <td>Subtotal</td>
-                    <td>{{#total_amount total_price}}{{/total_amount}} ៛</td>
+                    <td>{{#total_amount total_price_usd}}{{/total_amount}}</td>
                 </tr>
                 <tr>
                     <td>Tax</td>
-                    <td>0 ៛</td>
+                    <td>$0.00</td>
                 </tr>
                 <tr class="grand-total">
                     <td>Total</td>
-                    <td>{{#total_amount total_price}}{{/total_amount}} ៛</td>
+                    <td>{{#total_amount total_price_usd}}{{/total_amount}}</td>
                 </tr>
             </table>
 
             <div class="divider dashed"></div>
+            <p style="font-size:9px;text-align:center;color:#555;margin:6px 0 0;">Shown in USD (1 USD = {{khr_per_usd}} KHR)</p>
 
             <div class="footer">
                 <div class="thanks">Internal copy</div>
