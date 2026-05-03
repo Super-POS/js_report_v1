@@ -69,7 +69,6 @@ body {
     width: 12mm;
     height: 12mm;
     object-fit: contain;
-    filter: grayscale(1) contrast(1.2);
 }
 
 .shop-name {
